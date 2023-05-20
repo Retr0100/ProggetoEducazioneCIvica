@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Storia</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/bg.css">
+    <link rel="stylesheet" href="/src/icofont/icofont/icofont.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/swup@3"></script>
+    <script src="https://unpkg.com/@swup/scroll-plugin@2"></script>
+
+    <link rel="stylesheet" href="/src/css/Animation.css">
+<style>
+      @import url("https://rsms.me/inter/inter.css");
+      html {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+
+      .gradient {
+        background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
+      }
+
+      button,
+      .gradient2 {
+        background-color: #f39f86;
+        background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+      }
+
+      /* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+
+      .browser-mockup {
+        border-top: 2em solid rgba(230, 230, 230, 0.7);
+        position: relative;
+        height: 60vh;
+      }
+
+      .browser-mockup:before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: -1.25em;
+        left: 1em;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+        background-color: #f44;
+        box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+      }
+
+      .browser-mockup > * {
+        display: block;
+      }
+      /* Custom code for the demo */
+</style>
+
+</head>
+
+<body class=" leading-relaxed tracking-wide flex flex-col bg-gray-100">
+<!-- Sidenav -->
+<nav
+  id="sidenav-1"
+  id="sidenav-1"
+  class="fixed left-0 top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] dark:bg-zinc-800 md:data-[te-sidenav-hidden='false']:translate-x-0"
+    data-te-sidenav-init
+    data-te-sidenav-mode-breakpoint-over="0"
+    data-te-sidenav-mode-breakpoint-side="sm"
+    data-te-sidenav-hidden="false"
+    data-te-sidenav-color="dark"
+    data-te-sidenav-content="#content"
+    data-te-sidenav-scroll-container="#scrollContainer">
+  <a
+    class="mb-3 flex items-center justify-center border-b-2 border-solid border-gray-100 py-6 outline-none"
+    href="#!">
+    <img
+      id="te-logo"
+      class="mr-2 w-8"
+      src="/src/img/sun.png"
+      alt="TE Logo"
+      draggable="false" />
+    <span>Educazione Civica</span>
+  </a>
+  <ul
+    class="relative m-0 list-none px-[0.2rem] pb-12"
+    data-te-sidenav-menu-ref>
+    <li class="relative">
+      <a
+        href="home.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none #3b82f680 active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10">
+        <span
+          class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+          <i class="icofont-home"></i>
+        </span>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="relative pt-4">
+    
+      <span
+        class="px-6 py-4 text-[0.6rem] font-bold uppercase text-gray-600 dark:text-gray-400"
+        >Argomenti</span
+      >
+      <a
+        href="SistemiETps.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspSistemi e TPS</span>
+      </a>
+    </li>
+    <li class="relative">
+      <a
+      href="Storia.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspStoria</span>
+      </a>
+    </li>
+    <li class="relative">
+    
+        <a
+        href="EdFIsica.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspEd.Fisica</span>
+      </a>
+    </li>
+    <li class="relative">
+    
+        <a
+        href="Italiano.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspItaliano</span>
+      </a>
+    </li>
+    <li class="relative">
+    
+        <a
+        href="Matematica.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                <i class="icofont-book-mark"></i>
+            </span>
+        <span>&nbsp&nbspMatematica</span>
+      </a>
+    </li>
+    <li class="relative">
+    
+        <a
+        href="Inglese.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspInglese</span>
+      </a>
+    </li>
+
+    <li class="relative">
+
+        <a
+        href="Telecomunicazione.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspTelecomunicazione</span>
+      </a>
+    </li>
+    <li class="relative">
+    
+        <a
+        href="Informatica.html"
+        class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+        <span class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+            <i class="icofont-book-mark"></i>
+        </span>
+        <span>&nbsp&nbspInformatica</span>
+      </a>
+    </li>
+    <li class="relative pt-4">
+</nav>
+<!-- Sidenav -->
+<!-- Toggler  -->
+<button
+    class="ml-[95%] mt-[1%] fixed  inline-block rounded bg-[#D9D21A] px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-[#c0ba09] hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#c2bc08] active:shadow-lg sm:ml-[80%] sm:mt-5 md:ml-[84%] md:mt-[2%] lg:ml-[93%] lg:mt-[2%] xl:ml-[94%] xl:mt-[2%] 2xl:ml-[95%] 2xl:mt-[1%]"   
+    data-te-sidenav-toggle-ref
+    data-te-target="#sidenav-1"
+    data-te-animation-init  data-te-animation-start="onHover"
+    data-te-animation-reset="true" data-te-animation="[fade-in_1s_ease-in-out]"o
+    aria-controls="#sidenav-1"
+    aria-haspopup="true">
+    <i class="icofont-navigation-menu icofont-1x"></i>
+    </button>
+<!-- Toggler --> 
+<header>
+    <div class=" bg-[#f6f6f9] h-[80px] w-[100%] ">
+      <div class="flex ml-[40%] mr-[33%]  max-w-[250px] lg:ml-[40%] lg:mr-[33%] lg:max-w-[250px] sm:ml-[15%] sm:mr-[10%] sm:pt-2 sm:max-w-[250px] lg:pt-[4px]  " >
+          <img
+          class="w-[50px] mt-[10px]"
+          src="/src/img/sun.png"
+          draggable="false" />
+          <h1 class="relative pt-5 text-[20px] max-w-[200px] pl-5 sm:text-xl md:text-2xl lg:text-[20px]  ">
+            Educazione Civica
+          </h1>
+      </div>                                                                                              
+  </div>
+</header>
+
+<main id="swup" class="transition-fade">                                                                                                                                                              <!-- ml-[95%] mt-[1%] -->
+    <div class=" h-[600px] bg-cover w-[100%] rounded-sm "  style="background-image: url('/src/img/ImgMat/SfondoStoria.png');">
+    </div>
+</main>
+
+
+  <section class="bg-gray-100 border-b py-8 ">
+    <div class="container max-w-5xl mx-auto m-8 flex flex-col transition-slide" id="swup">
+      <h2
+        class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800 "
+        >
+        L'energia del Sole nel Passato
+      </h2>
+      <div class="w-full mb-4">
+        <div
+          class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+        ></div>
+      </div>
+  
+      <div class="flex flex-wrap flex-col md:flex-row">
+        <div class="w-5/6 md:w-1/2 p-6">
+          <h3  class="text-3xl text-gray-800 font-bold leading-none mb-3 ">
+            L'uso del Sole nel Medievo
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Oggi l'energia solare viene utilizzata tantissimo per la produzione di elettricità grazie 
+            all'effetto fotovoltaico, ma anche prima della rivoluzione industriale e la scoperta dell'elettricità, 
+            l'energia solare veniva sfruttata dagli umani.
+            Durante il medioevo, l'energia solare veniva utilizzata per l'agricoltura e la vita quotidiana in varie forme. 
+            La più comune era l'utilizzo dei raggi solari, che erano essenzialmente specchi piatti e concavi utilizzati per 
+            concentrare la luce solare su un punto preciso. Questo metodo veniva utilizzato per accendere fuochi per la cottura 
+            o per riscaldare le case.
+  
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 p-6">
+            <img src="/src/img/ImgMat/Bruegel-Pieter-Contadini-1565.jpg" alt="">
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap flex-col-reverse md:flex-row">
+        <div class="w-full md:w-1/2 p-6 mt-6">
+            <img src="/src/img/ImgMat/Mulino-ad-acqua.jpg" alt="">
+        </div>
+        <div class="w-full md:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 id="titolo" class="text-3xl text-gray-800 font-bold leading-none mb-3 ">
+              L'agricoltura
+            </h3>
+            <p class="text-gray-600 mb-8">
+                Nell'agricoltura, l'energia solare veniva utilizzata per migliorare la resa delle colture. I campi venivano posizionati in modo tale da ricevere la massima luce solare possibile, permettendo alle piante di crescere e maturare più velocemente.
+                Inoltre, l'energia solare veniva utilizzata anche per alimentare i mulini ad acqua, che erano sparsi in tutta Europa. Questi mulini sfruttavano l'energia del sole per produrre energia idroelettrica, che veniva utilizzata per macinare cereali, grano e altri prodotti agricoli
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap flex-col md:flex-row">
+        <div class="w-5/6 md:w-1/2 p-6">
+          <h3  class="text-3xl text-gray-800 font-bold leading-none mb-3 ">
+            Oggi
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Al giorno d'oggi, l'utilizzo dell'energia solare è molto più avanzato e sofisticato rispetto a quello del medioevo, ma l'utilizzo dell'energia solare rimane un modo efficace e sostenibile per sfruttare la forza del sole e generare energia pulita per la nostra società.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 p-6">
+            <img src="/src/img/ImgMat/Middle-3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</div>
+
+
+<section class="bg-white border-b py-8">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12 transition-slide1" id="swup">
+    <h2
+      class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
+    >
+      Puoi iniziare da:
+    </h2>
+    <div class="w-full mb-4">
+      <div
+        class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+      ></div>
+    </div>
+
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div
+        class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+      >
+        <a href="/src/html/Inglese.html" id="link1" class="flex flex-wrap no-underline hover:no-underline">
+          <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+            COMINCIA CON...
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            Solar Energy in the World
+          </div>
+          <p class="text-gray-600 text-base px-6 mb-5">
+            There are several countries that are
+            making great progress in the use of
+            solar energy such as: Germany, China,
+            ....
+          </p>
+        </a>
+      </div>
+      <div
+        class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+      >
+        <div class="flex items-center justify-start">
+          <button 
+            class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+          >
+          <a href="/src/html/Inglese.html">Vai</a> 
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div
+        class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+      >
+        <a href="/src/html/Italiano.html" class="flex flex-wrap no-underline hover:no-underline">
+          <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+            COMINCIA CON...
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            L'agenda 2030 e l'obbietivo 7
+          </div>
+          <p class="text-gray-600 text-base px-6 mb-5">
+            L'agenda 2030 è un insieme di obbiettivi che si sono posti da completare entro l'anno 2030.
+            Questi obbiettivi illustrati nell'agenda 2030 mirano sempre a risolvere problemi principalmente legati...
+          </p>
+        </a>
+      </div>
+      <div
+        class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+      >
+        <div class="flex items-center justify-center">
+          <button
+            class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+          >
+          <a href="/src/html/Italiano.html">Vai</a> 
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+      <div
+        class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+      >
+        <a href="/src/html/Telecomunicazione.html" class="flex flex-wrap no-underline hover:no-underline">
+          <p class="w-full text-gray-600 text-xs md:text-sm px-6 mt-6">
+            COMINCIA CON...
+          </p>
+          <div class="w-full font-bold text-xl text-gray-800 px-6">
+            Tecnologie
+          </div>
+          <p class=" text-gray-600 text-base px-6 mb-5">
+            Le principali tecnologie che utilizzano energia solare sono 3: Sistema Fotovoltaico, 
+            Sistema Termosolare e impianto solare a concentrazione...
+          </p>
+        </a>
+      </div>
+      <div
+        class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+      >
+        <div class="flex items-center justify-end">
+          <button
+            class="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-extrabold rounded my-6 py-4 px-8 shadow-lg"
+          >
+          <a href="/src/html/Telecomunicazione.html">Vai</a> 
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-white ">
+  <div class="container mx-auto mt-8 px-8">
+    <div class="w-full flex flex-col md:flex-row py-6">
+      <div class="flex-1 mb-6">
+        <a
+          class="text-black no-underline hover:no-underline font-bold text-xl lg:text-2xl"
+          href="https://www.iismargheritahackbaronissi.edu.it/"
+        >
+          <img src="/src/img/cropped-logo-hack.jpg" width="300" alt="">
+          <p class="text-xl ">I.I.S MARGHERITA HACK BARONISSI</p> 
+        </a>
+      </div>
+
+      <div class="flex-1">
+        <p class="uppercase font-extrabold text-gray-500 md:mb-6">Links</p>
+        <ul class="list-reset mb-6">
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+            <a
+              href="https://www.iismargheritahackbaronissi.edu.it/"
+              class="font-light no-underline hover:underline text-gray-800 hover:text-yellow-400"
+              >Scuola</a
+            >
+          </li>
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+            <a
+              href="https://tailwindcss.com/"
+              class="font-light no-underline hover:underline text-gray-800 hover:text-yellow-400"
+              >Tailwind css</a
+            >
+          </li>
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+            <a
+              href="https://undraw.co/"
+              class="font-light no-underline hover:underline text-gray-800 hover:text-yellow-400"
+              >undraw.co</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-1">
+        <p class="uppercase font-extrabold text-gray-500 md:mb-6">
+          Gruppo
+        </p>
+        <ul class="list-reset mb-6">
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+            <p class="font-light no-underline hover:underline text-gray-800 hover:text-yellow-400"> 
+              <a href="https://github.com/Retr0100">Memoli Francesco</a>: Creazione del sito e della parte grafica
+            </p>
+          </li>
+
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+            <p class="font-light no-underline  text-gray-800 hover:text-yellow-400">
+              Antonio Landi: Creazione Testi 
+            </p>
+          </li>
+
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+
+            <p class="font-light no-underline  text-gray-800 hover:text-yellow-400">
+              Rosario Viscardi: Creazione Testi 
+            </p>
+            
+          </li>
+
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+
+            <p class="font-light no-underline  text-gray-800 hover:text-yellow-400">
+              Giuseppe iacuzio: Creazione power point e presentazioni
+            </p>
+            
+          </li>
+
+
+          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+
+            <p class="font-light no-underline  text-gray-800 hover:text-yellow-400">
+              Alessio Aliberti: Creazione power point e presentazioni
+            </p>
+            
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  const swup = new Swup({
+    plugins: [new SwupScrollPlugin()]
+  });
+
+  window.addEventListener("load", function() {
+    swup.scrollTo(0, true)
+  });
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("slide-in-left");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    const target = document.querySelector('#titolo');
+    observer.observe(target);
+
+
+</script>
+</body>
+</html>
